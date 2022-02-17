@@ -1,0 +1,151 @@
+body {
+  background-image: url("BG.jpg");
+}
+
+.title {
+  position: relative;
+  bottom: 20px;
+}
+.container {
+  width: 450px;
+  height: 450px;
+  display: block;
+  margin: 25px auto;
+  position: relative;
+}
+
+#board {
+  position: absolute;
+  border: 1px solid #000;
+}
+
+.options {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background-image: url(emeralds.png);
+  background-color: rgb(105, 105, 105);
+  color: black;
+}
+
+.options h2 {
+  font-family: fantasy;
+  text-align: center;
+
+  border-style: solid 1px;
+  background-color: #011627;
+  color: white;
+}
+
+.options div {
+  display: inline-block;
+}
+.x {
+  position: relative;
+  top: 10px;
+}
+.o {
+  position: relative;
+  top: 10px;
+}
+.options .ai,
+.x {
+  font-family: fantasy;
+  padding: 5px;
+  background-color: #fff;
+  color: rgb(231, 6, 6);
+  font-size: 25px;
+  border-radius: 5px;
+  margin-left: 70px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.options .friend,
+.o {
+  font-family: fantasy;
+  padding: 5px;
+  background-color: #fff;
+  color: rgb(231, 6, 6);
+  font-size: 25px;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.options .friend:hover,
+.ai:hover,
+.x:hover,
+.o:hover {
+  background-color: #3096e9;
+  color: #fff;
+}
+
+.options .play {
+  font-family: fantasy;
+  font-size: 25px;
+  width: 70px;
+  display: block;
+  margin: 25px auto;
+  border-radius: 5px;
+  border: 1px solid #011627;
+  text-align: center;
+  padding: 10px;
+  background-color: #011627;
+  color: #fff;
+  cursor: pointer;
+  transition: 100ms width ease-in;
+}
+.options .play:hover {
+  width: 110px;
+}
+
+.active {
+  background-color: #011627 !important;
+  color: #fff !important;
+}
+.hide {
+  display: none;
+}
+
+/* End Game styles below*/
+.gameover {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.gameover .winner-img {
+  display: block;
+  margin: 20px auto;
+}
+.gameover {
+  text-align: center;
+  font-size: 50px;
+  font-family: "fantasy";
+  color: #fff;
+  margin: 40px 0 20px 0;
+}
+.gameover .play {
+  font-family: fantasy;
+  font-size: 25px;
+  width: 150px;
+  display: block;
+  margin: 25px auto;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: 100ms width ease-in;
+}
+.gameover .play:hover {
+  width: 200px;
+}
